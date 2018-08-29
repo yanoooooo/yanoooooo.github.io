@@ -1,20 +1,86 @@
-body {
-  min-height: 2000px;
-  padding-top: 70px;
+html, body, #app {
+  /* width: 100%;
+  height: 100%; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #5d4037;
+  animation: fadeIn 1s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0s 1 normal;
 }
 
-audio {
-    width: 100px;
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
-.marketing h2 {
-  font-weight: normal;
+
+a:link { color: #e65100; }
+a:visited { color: #e65100; }
+a:hover { color: #ffb74d; }
+a:active { color: #e65100; }
+
+/* navbar 全体の背景色とボーダーカラー */
+.navbar {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
 }
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+/* navbar テキストカラー */
+.navbar a {
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: #b71c1c;
+}
+
+/* navbar ハンバーガー四角枠 */
+.navbar-toggler {
+  border-color: #ffffff;
+}
+/* navbar ハンバーガー三本線 */
+.navbar-toggler-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+.even {
+  background-color: white;
+  padding: 3% 0;
+}
+
+.odd {
+  background-color: #fff8e1;
+  padding: 3% 0;
+}
+
+.modal-header {
+  background-color: #b71c1c;
+  color: #ffffff;
+}
+
+.close {
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #e65100;
+  border-color: #e65100;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #ffb74d;
+  border-color: #ffb74d;
+  color: #ffffff;
+}
+
+.card {
+  border-color: #ef9a9a;
+}
+
+.card-header {
+  background-color: #b71c1c;
+  color: #ffffff;
 }

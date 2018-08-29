@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="やの,西村綾乃,Ayano Nishimura,Ocha,お茶大,伊藤研,椎尾研">
+    <meta name="keywords" content="yano,Ayano Nishimura,Ocha,Itoh lab.,Siio lab.">
     <meta name="robots" content="index,nofollow">
-    <meta name="description" content="研究や趣味などの成果物が置いてある">
+    <meta name="description" content="Personal website.">
     <link rel="stylesheet" href="public/css/reset.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/main.css">
-    <title>西村 綾乃</title>
+    <title>Ayano Nishimura</title>
 </head>
 <body>
   <div id="app">
     <nav class="navbar navbar-expand-lg">
       <div class="navbar-nav">
-        <a class="nav-item nav-link lead" href="index_en.html"><i class="fas fa-language"></i></a>
+        <a class="nav-item nav-link lead" href="index.html"><i class="fas fa-language"></i></a>
       </div>
       <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,10 +34,10 @@
     </nav>
     <div class="jumbotron jumbotron-fluid odd" id="profile" style="margin: 0 0;">
       <div class="container">
-        <h1 class="display-5"><img src="public/img/yano.png" style="width: 50px; height: 50px; border-radius: 5%; margin-right:10px;" alt="Yano">西村 綾乃</h1>
+        <h1 class="display-5"><img src="public/img/yano.png" style="width: 50px; height: 50px; border-radius: 5%; margin-right:10px;" alt="Yano">Ayano Nishimura</h1>
         <p class="lead">
-          お茶の水女子大学 伊藤研究室</br>
-          ヤフー株式会社</br>
+          Itoh lab., Ochanomizu University</br>
+          Yahoo! Japan</br>
         </p>
         <p class="lead">
           <!-- <a href="resume.html"><i class="fas fa-user"></i></a> -->
@@ -58,7 +58,7 @@
           </dd>
         </dl>
         <p class="text-right">
-          <a href="#" data-toggle="modal" data-target="#news-modal">続きを見る</a>
+          <a href="#" data-toggle="modal" data-target="#news-modal">View more...</a>
         </p>
       </div>
       <!-- News Modal -->
@@ -95,7 +95,7 @@
             <div class="media-body">
               <h5 class="mt-0 mb-1">{{list.title}}</h5>
               {{list.text}}<br>
-              <a v-bind:href="'portfolio.html?id='+list.id"><small>詳細を見る</small></a>
+              <a v-bind:href="'portfolio_en.html?id='+list.id"><small>View detail...</small></a>
             </div>
           </li>
         </ul>
@@ -109,7 +109,7 @@
               <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    研究
+                    Research
                   </h5>
                 </div>
               </a>
@@ -126,7 +126,7 @@
               <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    受賞
+                    Awards
                   </h5>
                 </div>
               </a>
@@ -143,7 +143,7 @@
               <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
-                    舞台
+                    Stage
                   </h5>
                 </div>
               </a>
@@ -151,7 +151,7 @@
                 <div class="card-body">
                   <ul class="list-unstyled" v-for="list in stage">
                     <li><a v-bind:href="list.href" target="_blank">{{list.title}}</a><br>
-                      {{list.role}}. <small>{{list.company}}. {{list.date}}.</small></li>
+                      {{list.role}}, <small>{{list.company}}, {{list.date}}.</small></li>
                   </ul>
                 </div>
               </div>
@@ -164,9 +164,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
-  <script src="public/js/common.js"></script>
-  <!-- <script src="public/js/index.js"></script> -->
+  <script src="public/js/common_en.js"></script>
   <script type="text/javascript">
     var common = new Common();
     new Vue({
