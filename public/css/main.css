@@ -2,7 +2,7 @@ html, body, #app {
   /* width: 100%;
   height: 100%; */
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  color: #5d4037;
+  color: #705d56;
   animation: fadeIn 1s ease 0s 1 normal;
   -webkit-animation: fadeIn 1s ease 0s 1 normal;
 }
@@ -17,15 +17,15 @@ html, body, #app {
   100% {opacity: 1}
 }
 
-a:link { color: #e65100; }
-a:visited { color: #e65100; }
+a:link { color: #ff6978; }
+a:visited { color: #ff6978; }
 a:hover { color: #ffb74d; }
-a:active { color: #e65100; }
+a:active { color: #ff6978; }
 
 /* navbar 全体の背景色とボーダーカラー */
 .navbar {
-  background-color: #b71c1c;
-  border-color: #b71c1c;
+  background-color: #70abaf;
+  border-color: #70abaf;
 }
 /* navbar テキストカラー */
 .navbar a {
@@ -33,7 +33,7 @@ a:active { color: #e65100; }
 }
 
 .navbar a:hover {
-  color: #b71c1c;
+  color: #70abaf;
 }
 
 /* navbar ハンバーガー四角枠 */
@@ -51,12 +51,12 @@ a:active { color: #e65100; }
 }
 
 .odd {
-  background-color: #fff8e1;
+  background-color: #f0f7f4;
   padding: 3% 0;
 }
 
 .modal-header {
-  background-color: #b71c1c;
+  background-color: #70abaf;
   color: #ffffff;
 }
 
@@ -65,8 +65,8 @@ a:active { color: #e65100; }
 }
 
 .btn {
-  background-color: #e65100;
-  border-color: #e65100;
+  background-color: #ff6978;
+  border-color: #ff6978;
   color: #ffffff;
 }
 
@@ -77,10 +77,10 @@ a:active { color: #e65100; }
 }
 
 .card {
-  border-color: #ef9a9a;
+  border-color: #70abaf;
 }
 
 .card-header {
-  background-color: #b71c1c;
+  background-color: #70abaf;
   color: #ffffff;
 }
