@@ -34,6 +34,16 @@ function Common() {
     ],
     portfolio: [
       {
+        id: 5,
+        title: "Style Guide",
+        text: "単語と画像を入力することで、スタイルガイドを生成するWebアプリケーション。",
+        abst: "Webアプリケーションやネイティブアプリの開発において、スタイルガイドと呼ばれるデザインについてのルールを策定することがある。ガイドラインを決定することで、デザインに一貫性を持たせ、作業者間でデザインの共通認識を形成する上での一助となる。デザインの知識が乏しい場合や、デザイナーがいない状況ではスタイルガイドを作成することは難しい。本研究では、アプリケーションのイメージを表す単語を選択し、ユーザが想像する雰囲気に近い画像を入稿することで、作業者がイメージする配色が自動生成されるシステムを作成した。<br><p class='h5 mt-3'><a href='https://github.com/yanoooooo/style_guide' target='_blank'><i class='fab fa-github'></i> GitHub</a></p>",
+        icon: "public/img/icon_styleguide.png",
+        img: "public/img/styleguide.png",
+        alt: "Style Guide",
+        video: ""
+      },
+      {
         id: 4,
         title: "Lyric Translation",
         text: "外国語の歌曲を日本語に訳詞するインタラクティブなWebアプリケーション。",
@@ -57,7 +67,7 @@ function Common() {
         id: 2,
         title: "Rijowarts",
         text: "徽音祭で展示しているインタラクティブなアトラクション施設。展示の他にもワークショップを行ったりしている。",
-        abst: "お茶の水大学の文化祭にて2014年に初出展。当時は魔法の試験を体験できるインタラクティブな施設として、展示を行った。現在では謎解きとアトラクションを掛け合わせた新しい形で出展をしている。<br><p class='h5 mt-3'><a href='https://youtu.be/BYIDQ4ODOOA' target='_blank'><i class='fab fa-youtube'></i>YouTube</a></p>",
+        abst: "お茶の水大学の文化祭にて2014年に初出展。当時は魔法の試験を体験できるインタラクティブな施設として、展示を行った。現在では謎解きとアトラクションを掛け合わせた新しい形で出展をしている。<br><p class='h5 mt-3'><a href='https://youtu.be/BYIDQ4ODOOA' target='_blank'><i class='fab fa-youtube'></i> YouTube</a></p>",
         icon: "public/img/icon_rijowarts.png",
         img: "public/img/rijowarts.png",
         alt: "Rijowarts",
@@ -75,6 +85,13 @@ function Common() {
       },
     ],
     research: [
+      {
+        title: "単語と画像を元にしたウェブにおけるスタイルガイド自動生成システムの提案",
+        author: "長谷部 礼, 西村綾乃",
+        conference: "WISS 2018",
+        date: "Sep. 2018",
+        href: "https://www.wiss.org/WISS2018Proceedings/demo/1-A03.pdf"
+      },
       {
         title: "Implementation of an Interactive System for the Translation of Lyrics",
         author: "Ayano Nishimura, Takayuki Itoh",

@@ -34,6 +34,16 @@ function Common() {
     ],
     portfolio: [
       {
+        id: 5,
+        title: "Style Guide",
+        text: "An automatic generation system of style guides based on term and image.",
+        abst: "Design rules sometimes formulated in the development of Web applications or smartphone applications. These rules are called style guide. Style guides are help ensure consistency in application design, and help to create common recognition of design among workers. However, it is difficult to descide style guides in the case of design knowledge is poor or there is no designer. In this research, we implemented a system which sutomatically generating the color scheme based on terms and images selected by users.<br><p class='h5 mt-3'><a href='https://github.com/yanoooooo/style_guide' target='_blank'><i class='fab fa-github'></i> GitHub</a></p>",
+        icon: "public/img/icon_styleguide.png",
+        img: "public/img/styleguide.png",
+        alt: "Style Guide",
+        video: ""
+      },
+      {
         id: 4,
         title: "Lyric Translation",
         text: "The interactive web application for translating foreign lyric to Japanese lyric.",
@@ -75,6 +85,13 @@ function Common() {
       },
     ],
     research: [
+      {
+        title: "An Automatic Generation System of Style Guides Based on Term and Image",
+        author: "Aya Hasebe, Ayano Nishimura",
+        conference: "WISS 2018 (in Japan)",
+        date: "Sep. 2018",
+        href: "https://www.wiss.org/WISS2018Proceedings/demo/1-A03.pdf"
+      },
       {
         title: "Implementation of an Interactive System for the Translation of Lyrics",
         author: "Ayano Nishimura, Takayuki Itoh",
