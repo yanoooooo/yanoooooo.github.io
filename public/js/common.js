@@ -41,7 +41,8 @@ function Common() {
         icon: "public/img/icon_styleguide.png",
         img: "public/img/styleguide.png",
         alt: "Style Guide",
-        video: ""
+        video: "",
+        tag: "style-guide"
       },
       {
         id: 4,
@@ -51,7 +52,8 @@ function Common() {
         icon: "public/img/icon_translation.png",
         img: "public/img/translation.png",
         alt: "Lyric Translation",
-        video: "public/video/translation.mp4"
+        video: "public/video/translation.mp4",
+        tag: "lyric-translation"
       },
       {
         id: 3,
@@ -61,7 +63,8 @@ function Common() {
         icon: "public/img/icon_imake.png",
         img: "public/img/imake.png",
         alt: "iMake",
-        video: "public/video/imake.mp4"
+        video: "public/video/imake.mp4",
+        tag: "imake"
       },
       {
         id: 2,
@@ -71,7 +74,8 @@ function Common() {
         icon: "public/img/icon_rijowarts.png",
         img: "public/img/rijowarts.png",
         alt: "Rijowarts",
-        video: ""
+        video: "",
+        tag: "rijowarts"
       },
       {
         id: 1,
@@ -81,7 +85,8 @@ function Common() {
         icon: "public/img/icon_contexinger.png",
         img: "public/img/contexinger.png",
         alt: "conteXinger",
-        video: "public/video/contexinger.mp4"
+        video: "public/video/contexinger.mp4",
+        tag: "contexinger"
       },
     ],
     research: [
@@ -90,112 +95,128 @@ function Common() {
         author: "長谷部 礼, 西村綾乃",
         conference: "WISS 2018",
         date: "Sep. 2018",
-        href: "https://www.wiss.org/WISS2018Proceedings/demo/1-A03.pdf"
+        href: "https://www.wiss.org/WISS2018Proceedings/demo/1-A03.pdf",
+        tag: "style-guide"
       },
       {
         title: "Implementation of an Interactive System for the Translation of Lyrics",
         author: "Ayano Nishimura, Takayuki Itoh",
         conference: "IUI 2018",
         date: "Mar. 2018",
-        href: "https://dl.acm.org/citation.cfm?id=3180317"
+        href: "https://dl.acm.org/citation.cfm?id=3180317",
+        tag: "lyric-translation"
       },
       {
         title: "外国語の歌曲を訳詞するためのインターフェースの検討",
         author: "西村綾乃, 伊藤貴之",
         conference: "WISS 2017",
         date: "2017年12月",
-        href: "http://www.wiss.org/WISS2017Proceedings/"
+        href: "http://www.wiss.org/WISS2017Proceedings/",
+        tag: "lyric-translation"
       },
       {
         title: "外国語の歌曲の自動訳詞システムに関する初期実装",
         author: "西村綾乃, 伊藤貴之",
         conference: "音学シンポジウム 2017",
         date: "2017年6月",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=182218&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=182218&item_no=1&page_id=13&block_id=8",
+        tag: "lyric-translation"
       },
       {
         title: "外国語の歌曲を自動訳詞するシステムのための課題と手法の検討",
         author: "西村綾乃, 伊藤貴之",
         conference: "JSAI 2017",
         date: "2017年5月",
-        href: "https://www.ai-gakkai.or.jp/jsai2017/webprogram/2017/paper-432.html"
+        href: "https://www.ai-gakkai.or.jp/jsai2017/webprogram/2017/paper-432.html",
+        tag: "lyric-translation"
       },
       {
         title: "外国語の歌曲を自動訳詞するシステムのための翻訳手法の検討",
         author: "西村綾乃, 伊藤貴之",
         conference: "インタラクション2017",
         date: "2017年3月",
-        href: "http://www.interaction-ipsj.org/proceedings/2017/data/pdf/2-408-78.pdf"
+        href: "http://www.interaction-ipsj.org/proceedings/2017/data/pdf/2-408-78.pdf",
+        tag: "lyric-translation"
       },
       {
         title: "conteXinger: A Context-aware Song Generator to Enrich Daily Lives",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 13th International Conference on Advances in Computer Entertainment Technology (ACE2016)",
         date: "Nov. 2016",
-        href: "http://dl.acm.org/citation.cfm?id=3014350&CFID=931670846&CFTOKEN=29006312"
+        href: "http://dl.acm.org/citation.cfm?id=3014350&CFID=931670846&CFTOKEN=29006312",
+        tag: "contexinger"
       },
       {
         title: "Rijowarts: 技術関心を誘引するエンタテイメントシステムの開発と評価",
         author: "西村綾乃, 氏間可織, 安齊クレア, 甲藤仁美, 有本茜, 橋本菜摘",
         conference: "インタラクション2015",
         date: "2015年3月",
-        href: "http://www.interaction-ipsj.org/proceedings/2015/data/bib/C37.html"
+        href: "http://www.interaction-ipsj.org/proceedings/2015/data/bib/C37.html",
+        tag: "rijowarts"
       },
       {
         title: "iMake: eye makeup design generator",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 11th Conference on Advances in Computer Entertainment Technology (ACE '14)",
         date: "Nov. 2014",
-        href: "http://dl.acm.org/citation.cfm?id=2663823&CFID=931670846&CFTOKEN=29006312"
+        href: "http://dl.acm.org/citation.cfm?id=2663823&CFID=931670846&CFTOKEN=29006312",
+        tag: "imake"
       },
       {
         title: "iMake: computer-aided eye makeup",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 5th Augmented Human International Conference (AH '14)",
         date: "Mar. 2014",
-        href: "http://dl.acm.org/citation.cfm?id=2582051.2582107&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638"
+        href: "http://dl.acm.org/citation.cfm?id=2582051.2582107&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638",
+        tag: "imake"
       },
       {
         title: "iMake : 画像からアイメイクを生成するシステムの提案",
         author: "西村綾乃, 椎尾一郎",
         conference: "インタラクション2014",
         date: "2014年2月",
-        href: "http://www.interaction-ipsj.org/proceedings/2014/data/bib/C2-6.html"
+        href: "http://www.interaction-ipsj.org/proceedings/2014/data/bib/C2-6.html",
+        tag: "imake"
       },
       {
         title: "日本バーチャルリアリティ学会誌 2013 No.4 Vol.18",
         author: "西村綾乃",
         conference: "学会参加報告",
         date: "2013年12月",
-        href: "https://vrsj.org/journal/backnumber/1-3/#18-4"
+        href: "https://vrsj.org/journal/backnumber/1-3/#18-4",
+        tag: ""
       },
       {
         title: "ConteXinger: a context-aware song generator",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 2013 ACM conference on Pervasive and ubiquitous computing adjunct publication (UbiComp '13 Adjunct)",
         date: "Sep. 2013",
-        href: "http://dl.acm.org/citation.cfm?id=2494091.2494116&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638"
+        href: "http://dl.acm.org/citation.cfm?id=2494091.2494116&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638",
+        tag: "contexinger"
       },
       {
         title: "conteXinger : 日常のコンテクストを取り込み歌うVOCALOID",
         author: "西村綾乃, 椎尾一郎",
         conference: "ユビキタスコンピューティングシステム研究会 第38回研究発表会",
         date: "2013年5月",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=92055&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=92055&item_no=1&page_id=13&block_id=8",
+        tag: "contexinger"
       },
       {
         title: "conteXinger : 日常のコンテクストを歌いあげるVOCALOID",
         author: "西村綾乃, 椎尾一郎",
         conference: "音楽情報科学研究会 第99回研究発表会",
         date: "2013年5月",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=91801&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=91801&item_no=1&page_id=13&block_id=8",
+        tag: "contexinger"
       },
       {
         title: "conteXinger : 日常のコンテクストを取り込んだ歌声生成",
         author: "西村綾乃, 椎尾一郎",
         conference: "情報処理学会 第75回全国大会",
         date: "2013年3月",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=112362&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=112362&item_no=1&page_id=13&block_id=8",
+        tag: "contexinger"
       }
     ],
     award: [

@@ -41,7 +41,8 @@ function Common() {
         icon: "public/img/icon_styleguide.png",
         img: "public/img/styleguide.png",
         alt: "Style Guide",
-        video: ""
+        video: "",
+        tag: "style-guide"
       },
       {
         id: 4,
@@ -51,7 +52,8 @@ function Common() {
         icon: "public/img/icon_translation.png",
         img: "public/img/translation.png",
         alt: "Lyric Translation",
-        video: "public/video/translation.mp4"
+        video: "public/video/translation.mp4",
+        tag: "lyric-translation"
       },
       {
         id: 3,
@@ -61,7 +63,8 @@ function Common() {
         icon: "public/img/icon_imake.png",
         img: "public/img/imake.png",
         alt: "iMake",
-        video: "public/video/imake.mp4"
+        video: "public/video/imake.mp4",
+        tag: "imake"
       },
       {
         id: 2,
@@ -71,7 +74,8 @@ function Common() {
         icon: "public/img/icon_rijowarts.png",
         img: "public/img/rijowarts.png",
         alt: "Rijowarts",
-        video: ""
+        video: "",
+        tag: "rijowarts"
       },
       {
         id: 1,
@@ -81,7 +85,8 @@ function Common() {
         icon: "public/img/icon_contexinger.png",
         img: "public/img/contexinger.png",
         alt: "conteXinger",
-        video: "public/video/contexinger.mp4"
+        video: "public/video/contexinger.mp4",
+        tag: "contexinger"
       },
     ],
     research: [
@@ -90,112 +95,128 @@ function Common() {
         author: "Aya Hasebe, Ayano Nishimura",
         conference: "WISS 2018 (in Japan)",
         date: "Sep. 2018",
-        href: "https://www.wiss.org/WISS2018Proceedings/demo/1-A03.pdf"
+        href: "https://www.wiss.org/WISS2018Proceedings/demo/1-A03.pdf",
+        tag: "style-guide"
       },
       {
         title: "Implementation of an Interactive System for the Translation of Lyrics",
         author: "Ayano Nishimura, Takayuki Itoh",
         conference: "IUI 2018",
         date: "Mar. 2018",
-        href: "https://dl.acm.org/citation.cfm?id=3180317"
+        href: "https://dl.acm.org/citation.cfm?id=3180317",
+        tag: "lyric-translation"
       },
       {
         title: "A study of an interface for translating foreign lyric",
         author: "Ayano Nishimura and Takayuki Itoh",
         conference: "WISS 2017 (in Japan)",
         date: "Dec. 2017",
-        href: "http://www.wiss.org/WISS2017Proceedings/"
+        href: "http://www.wiss.org/WISS2017Proceedings/",
+        tag: "lyric-translation"
       },
       {
         title: "An Initial Implementation of Interactive System for Automatic Translation of Foreign Lyrics",
         author: "Ayano Nishimura and Takayuki Itoh",
         conference: "The 115th Regular Meeting of SIGMUS (in Japan)",
         date: "Jun. 2017",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=182218&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=182218&item_no=1&page_id=13&block_id=8",
+        tag: "lyric-translation"
       },
       {
         title: "A Study on Task and Methods for Automatic Translation of Foreign Lylics",
         author: "Ayano Nishimura and Takayuki Itoh",
         conference: "JSAI 2017 (in Japan)",
         date: "May. 2017",
-        href: "https://www.ai-gakkai.or.jp/jsai2017/webprogram/2017/paper-432.html"
+        href: "https://www.ai-gakkai.or.jp/jsai2017/webprogram/2017/paper-432.html",
+        tag: "lyric-translation"
       },
       {
         title: "A Study on Translation Techniques for Automatic Translation of Foreign Lylics",
         author: "Ayano Nishimura and Takayuki Itoh",
         conference: "Interaction 2017 (in Japan)",
         date: "Mar. 2017",
-        href: "http://www.interaction-ipsj.org/proceedings/2017/data/pdf/2-408-78.pdf"
+        href: "http://www.interaction-ipsj.org/proceedings/2017/data/pdf/2-408-78.pdf",
+        tag: "lyric-translation"
       },
       {
         title: "conteXinger: A Context-aware Song Generator to Enrich Daily Lives",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 13th International Conference on Advances in Computer Entertainment Technology (ACE2016)",
         date: "Nov. 2016",
-        href: "http://dl.acm.org/citation.cfm?id=3014350&CFID=931670846&CFTOKEN=29006312"
+        href: "http://dl.acm.org/citation.cfm?id=3014350&CFID=931670846&CFTOKEN=29006312",
+        tag: "contexinger"
       },
       {
         title: "Rijowarts : Development and Evaluation of an Entertainment System Arousing Interest to Technology",
         author: "Ayano Nishimura, Kaori Ujima, Kurea Anzai, Hitomi Katto, Akane Arimoto and Natsumi Hashimoto",
         conference: "Interaction 2015 (in Japan)",
         date: "Mar. 2015",
-        href: "http://www.interaction-ipsj.org/proceedings/2015/data/bib/C37.html"
+        href: "http://www.interaction-ipsj.org/proceedings/2015/data/bib/C37.html",
+        tag: "rijowarts"
       },
       {
         title: "iMake: eye makeup design generator",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 11th Conference on Advances in Computer Entertainment Technology (ACE '14)",
         date: "Nov. 2014",
-        href: "http://dl.acm.org/citation.cfm?id=2663823&CFID=931670846&CFTOKEN=29006312"
+        href: "http://dl.acm.org/citation.cfm?id=2663823&CFID=931670846&CFTOKEN=29006312",
+        tag: "imake"
       },
       {
         title: "iMake: computer-aided eye makeup",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 5th Augmented Human International Conference (AH '14)",
         date: "Mar. 2014",
-        href: "http://dl.acm.org/citation.cfm?id=2582051.2582107&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638"
+        href: "http://dl.acm.org/citation.cfm?id=2582051.2582107&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638",
+        tag: "imake"
       },
       {
         title: "iMake : An Eye Makeup Design Generator",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "Interaction 2014 (in Japan)",
         date: "Feb. 2014",
-        href: "http://www.interaction-ipsj.org/proceedings/2014/data/bib/C2-6.html"
+        href: "http://www.interaction-ipsj.org/proceedings/2014/data/bib/C2-6.html",
+        tag: "imake"
       },
       {
         title: "The Virtual Reality Society of Japan Academic Journal 2013 No.4 Vol.18",
         author: "Ayano Nishimura",
         conference: "Conference Report (in Japan)",
         date: "Dec. 2013",
-        href: "https://vrsj.org/journal/backnumber/1-3/#18-4"
+        href: "https://vrsj.org/journal/backnumber/1-3/#18-4",
+        tag: ""
       },
       {
         title: "ConteXinger: a context-aware song generator",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "In Proceedings of the 2013 ACM conference on Pervasive and ubiquitous computing adjunct publication (UbiComp '13 Adjunct)",
         date: "Sep. 2013",
-        href: "http://dl.acm.org/citation.cfm?id=2494091.2494116&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638"
+        href: "http://dl.acm.org/citation.cfm?id=2494091.2494116&coll=DL&dl=ACM&CFID=337492543&CFTOKEN=43175638",
+        tag: "contexinger"
       },
       {
         title: "conteXinger: VOCALOID takes the context of everyday in singing",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "The 38th Regular Meeting of SIGUBI (in Japan)",
         date: "May. 2013",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=92055&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=92055&item_no=1&page_id=13&block_id=8",
+        tag: "contexinger"
       },
       {
         title: "conteXinger: VOCALOID sings the context of everyday",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "The 99th Regular Meeting of SIGMUS (in Japan)",
         date: "May. 2013",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=91801&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=91801&item_no=1&page_id=13&block_id=8",
+        tag: "contexinger"
       },
       {
         title: "conteXinger : Vocal generation take in context of everyday",
         author: "Ayano Nishimura and Itiro Siio",
         conference: "The 75th National Convention of IPSJ (in Japan)",
         date: "Mar. 2013",
-        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=112362&item_no=1&page_id=13&block_id=8"
+        href: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=112362&item_no=1&page_id=13&block_id=8",
+        tag: "contexinger"
       }
     ],
     award: [
