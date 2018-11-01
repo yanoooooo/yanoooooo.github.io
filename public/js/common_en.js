@@ -1,10 +1,11 @@
 function Common() {
   this.data = {
     news: [
-      {date: "2018/09/26", contents: "Demo Presentation at WISS 2018; Style Guide", icon:"far fa-file-alt"},
+      {date: "2018/10/31", contents: "Leave Yahoo! JAPAN.", icon: "far fa-building"},
+      {date: "2018/09/26", contents: "Demo Presentation at WISS 2018; Style Guide.", icon:"far fa-file-alt"},
       {date: "2018/03/07", contents: "Poster Presentation at The 23rd Annual Meeting of The Intelligent User Interfaces; Lyric Translation.", icon:"far fa-file-alt"},
       {date: "2017/12/06", contents: "Oral Presentation at The 25th Workshop on Interactive Systems and Software; Lyric Translation.", icon:"far fa-file-alt"},
-      {date: "2017/11/11", contents: "Rijowarts; The Mystery of The Magical Lantern and Rijowarts", icon:"far fa-lightbulb"},
+      {date: "2017/11/11", contents: "Rijowarts; The Mystery of The Magical Lantern and Rijowarts.", icon:"far fa-lightbulb"},
       {date: "2017/06/17", contents: "Poster Presentation at The 115h Regular Meeting of SIGMUS; Lyric Translation.", icon:"far fa-file-alt"},
       {date: "2017/06/10", contents: "Second Finish Award at SPAJAM preliminary contest 2017.", icon:"fas fa-award"},
       {date: "2017/05/23", contents: "Oral Presentation at The Japanese Society for Artificial Intelligence 2017; Lyric Translation.", icon:"far fa-file-alt"},
