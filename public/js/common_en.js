@@ -1,6 +1,7 @@
 function Common() {
   this.data = {
     news: [
+      {date: "2018/12/03", contents: "Entrance into TYFFON Inc.", icon: "far fa-building"},
       {date: "2018/10/31", contents: "Leave Yahoo! JAPAN.", icon: "far fa-building"},
       {date: "2018/09/26", contents: "Demo Presentation at WISS 2018; Style Guide.", icon:"far fa-file-alt"},
       {date: "2018/03/07", contents: "Poster Presentation at The 23rd Annual Meeting of The Intelligent User Interfaces; Lyric Translation.", icon:"far fa-file-alt"},
