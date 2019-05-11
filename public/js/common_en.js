@@ -1,6 +1,7 @@
 function Common() {
   this.data = {
     news: [
+      {date: "2019/05/07", contents: "CHI 2019 Late Breaking Work; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2018/12/03", contents: "Entrance into TYFFON Inc.", icon: "far fa-building"},
       {date: "2018/10/31", contents: "Leave Yahoo! JAPAN.", icon: "far fa-building"},
       {date: "2018/09/26", contents: "Demo Presentation at WISS 2018; Style Guide.", icon:"far fa-file-alt"},
@@ -92,6 +93,14 @@ function Common() {
       },
     ],
     research: [
+      {
+        title: "Interactive Lyric Translation System: Implementation and Experiments",
+        author: "Ayano Nishimura, Takayuki Itoh",
+        conference: "CHI 2019",
+        date: "May. 2019",
+        href: "https://dl.acm.org/citation.cfm?id=3313046",
+        tag: "lyric-translation"
+      },
       {
         title: "An Automatic Generation System of Style Guides Based on Term and Image",
         author: "Aya Hasebe, Ayano Nishimura",
