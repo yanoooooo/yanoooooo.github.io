@@ -1,6 +1,7 @@
 function Common() {
   this.data = {
     news: [
+      {date: "2020/07/30", contents: "Visual Computing for Industry, Biomedicine, and Art; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2019/05/07", contents: "CHI 2019 Late Breaking Work; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2018/12/03", contents: "ティフォン株式会社 入社", icon: "far fa-building"},
       {date: "2018/10/31", contents: "Yahoo! JAPAN 退職", icon: "far fa-building"},
@@ -93,6 +94,14 @@ function Common() {
       },
     ],
     research: [
+      {
+        title: "Implementation and experiments for interactive lyrics transcreation system",
+        author: "Ayano Nishimura, Takayuki Itoh",
+        conference: "Visual Computing for Industry, Biomedicine, and Art",
+        date: "Jul. 2020",
+        href: "https://vciba.springeropen.com/articles/10.1186/s42492-020-00053-x",
+        tag: "lyric-translation"
+      },
       {
         title: "Interactive Lyric Translation System: Implementation and Experiments",
         author: "Ayano Nishimura, Takayuki Itoh",
