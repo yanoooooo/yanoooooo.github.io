@@ -1,0 +1,63 @@
+html, body, #app {
+  /* width: 100%;
+  height: 100%; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #917B56;
+  background-color: #F0E4D4;
+  animation: fadeIn 1s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0s 1 normal;
+  padding-top: 1%;
+}
+
+
+a:link { color: #D18063; }
+a:visited { color: #D18063; }
+a:hover { color: #F9D9CA; }
+a:active { color: #D18063; }
+
+#afternoontea-list{
+  background-color: white;
+  margin: 2% 0%;
+  padding: 2%;
+  border: 3px dashed #F9D9CA;
+  box-shadow: 0 0 0 8px #ffffff;
+}
+
+.close {
+  color: #D18063;
+}
+
+.close:hover {
+  color: #F9D9CA;
+}
+
+.btn {
+  background-color: #D18063;
+  border-color: #D18063;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #F9D9CA;
+  border-color: #F9D9CA;
+  color: #ffffff;
+}
+
+img.mr-3 {
+  width: 100px;
+  height: 100px;
+}
+
+.media{
+  margin: 5px;
+}
+
+.main-img{
+  width: 300px;
+  height: 300px;
+}
+
+.food-img{
+  width: 200px;
+  height: 200px;
+}

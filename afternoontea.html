@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/afternoontea.css">
+    <title>AfternoonTea</title>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1>Afternoon Tea Records</h1>
+      <div id="afternoontea-list" class="rounded">
+        <ul class="list-unstyled">
+          <li class="media" v-for="(list, index) in afternoontea">
+            <img class="mr-3" v-bind:src="'./public/img/afternoontea/' +list.Date+ '/main.jpg'">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1"><a href="#" data-toggle="modal" data-target="#detail-modal" @click="showDetail(index)">{{list.Place[0]}}</a></h5>
+              <p>{{combineComment(index)}}</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item">訪問日: {{getDateStr(list.Date[0])}}</li>
+                <li class="list-inline-item"><i class="fas fa-yen-sign"></i>{{String(list.Price)}}-</li>
+                <li class="list-inline-item"><a v-bind:href="list.Map" target="_blank"><i class="fas fa-map-marker-alt"></i> MAP</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    </div>
+    <!-- detail Modal -->
+    <div class="modal fade" id="detail-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" v-if="currentData.length != 0">{{currentData.Place[0]}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="overflow:scroll;">
+            <div class="container" v-if="currentData.length != 0">
+              <div class="row">
+                <div class="col text-center">
+                  <img class="main-img d-block mx-auto" v-bind:src="'./public/img/afternoontea/' +currentData.Date+ '/main.jpg'">
+                  <p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">訪問日: {{getDateStr(currentData.Date[0])}}</li>
+                      <li class="list-inline-item"><i class="fas fa-yen-sign"></i> {{String(currentData.Price)}}-</li>
+                      <li class="list-inline-item"><a v-bind:href="currentData.Map" target="_blank"><i class="fas fa-map-marker-alt"></i> MAP</a></li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="col">
+                  <h4>Drink</h4>
+                  <ul class="list-unstyled">
+                    <li class="small" v-for="tea in currentData.Tea">
+                      {{tea}}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h4>Food</h4>
+              <div class="row text-center">
+                <div class="col" v-for="(foodName, index) in currentData.Food">
+                  <figure>
+                     <img class="food-img" v-bind:src="'./public/img/afternoontea/' +currentData.Date+ '/' +currentData.Images[index]" alt="foodName">
+                     <figcaption>{{foodName}}</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="public/js/afternoontea.js"></script>
+  <script type="text/javascript">
+    var afternoonTea = new AfternoonTea();
+    // var common = new Common();
+    //
+    // url = location.search.substring(1).split('&');
+    // var arg = [];
+    // for(i=0; url[i]; i++) {
+    //     var k = url[i].split('=');
+    //     arg[k[0]] = k[1];
+    // }
+    // id = arg.id;
+    //
+    // const portfolio = common.data.portfolio.find((detail) => {
+    //   return (detail.id == id);
+    // });
+
+    new Vue({
+      el: '#app',
+      data: {
+        afternoontea: afternoonTea.data,
+        currentData: []
+      },
+      methods: {
+        combineComment: function(index){
+          var result = "";
+          var comment = this.afternoontea[index].Comment;
+          for(var i = 0; i < comment.length; i++){
+            result += comment[i]
+            if(i != comment.length - 1){
+                result += ", ";
+            }
+          }
+          return result;
+        },
+        getDateStr: function(date){
+          var str = String(date)
+          var result = str.substr(0, 4) + "/";
+          result += str.substr(4, 2) + "/";
+          result += str.substr(6, 2);
+          return result;
+        },
+        showDetail: function(index){
+          this.currentData = this.afternoontea[index];
+        }
+      }
+    })
+  </script>
+</body>
+</html>
