@@ -68,7 +68,7 @@ function Common() {
         text: "This system generates eye-makeup designs by extracting colors and features from images arbitrarily selected by the user.",
         abst: 'Many women enjoy applying makeup. Eye makeup is especially important for face makeup, because eyeshadow color and eyeline shape can dramatically change a person’s impression on others. In addition to standard eye makeup, there is "artistic eye makeup," which tends to have a greater variety of designs and is more ostentatious than standard eye makeup. Needless to say, it is often difficult for non-artistic people to apply this type of eye makeup. Therefore, we propose and implement a computer-aided eye makeup design system called "iMake." This system generates artistic eye makeup designs from the colors and shapes of a favorite character selected by a user. Once the user has selected the desired eye generates artistic eye makeup designs from the colors and shapes of a favorite character selected by a user. Once the user has selected the desired eye makeup pattern, an ink-jet color printer prints it on a transfer sheet that the user can apply to his/her eyelids.',
         icon: "public/img/icon_imake.png",
-        img: "public/img/imake.png",
+        img: "public/img/imake.jpg",
         alt: "iMake",
         video: "public/video/imake.mp4",
         tag: "imake"
