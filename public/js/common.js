@@ -1,6 +1,8 @@
 function Common() {
   this.data = {
     news: [
+      {date: "2024/01/01", contents: "株式会社NTTコノキュー 入社", icon: "far fa-building"},
+      {date: "2023/12/31", contents: "ティフォン株式会社 退職", icon: "far fa-building"},
       {date: "2023/12/22", contents: "芸術科学会論文誌; iMake", icon:"far fa-file-alt"},
       {date: "2020/07/30", contents: "Visual Computing for Industry, Biomedicine, and Art; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2019/05/07", contents: "CHI 2019 Late Breaking Work; Lyric Translation", icon:"far fa-file-alt"},
