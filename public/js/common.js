@@ -1,6 +1,7 @@
 function Common() {
   this.data = {
     news: [
+      {date: "2023/12/22", contents: "芸術科学会論文誌; iMake", icon:"far fa-file-alt"},
       {date: "2020/07/30", contents: "Visual Computing for Industry, Biomedicine, and Art; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2019/05/07", contents: "CHI 2019 Late Breaking Work; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2018/12/03", contents: "ティフォン株式会社 入社", icon: "far fa-building"},
@@ -94,6 +95,14 @@ function Common() {
       },
     ],
     research: [
+      {
+        title: "iMake: 派手なアイメイクデザインをモチーフから作成するシステムの提案と評価",
+        author: "西村 綾乃, 上村 卓也, 伊藤 貴之, 椎尾 一郎",
+        conference: "芸術科学会論文誌",
+        date: "Dec. 2023",
+        href: "https://www.art-science.org/journal/v22n5/index.html",
+        tag: "imake"
+      },
       {
         title: "Implementation and experiments for interactive lyrics transcreation system",
         author: "Ayano Nishimura, Takayuki Itoh",

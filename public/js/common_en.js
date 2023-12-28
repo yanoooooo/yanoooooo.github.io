@@ -1,6 +1,7 @@
 function Common() {
   this.data = {
     news: [
+      {date: "2023/12/22", contents: "The Journal of the Society for Art and Science; iMake", icon:"far fa-file-alt"},
       {date: "2020/07/30", contents: "Visual Computing for Industry, Biomedicine, and Art; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2019/05/07", contents: "CHI 2019 Late Breaking Work; Lyric Translation", icon:"far fa-file-alt"},
       {date: "2018/12/03", contents: "Entrance into TYFFON Inc.", icon: "far fa-building"},
@@ -94,6 +95,14 @@ function Common() {
       },
     ],
     research: [
+      {
+        title: "iMake: implementation and evaluation of a system to create fancy eye makeup designs from motifs",
+        author: "Ayano Nishimura, Takuya Koumura, Takayuki Itoh, Itiro Siio",
+        conference: "The Journal of the Society for Art and Science",
+        date: "Dec. 2023",
+        href: "https://www.art-science.org/journal/v22n5/index.html",
+        tag: "imake"
+      },
       {
         title: "Implementation and experiments for interactive lyrics transcreation system",
         author: "Ayano Nishimura, Takayuki Itoh",
