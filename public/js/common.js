@@ -1,6 +1,7 @@
 function Common() {
   this.data = {
     news: [
+      {date: "2024/03/31", contents: "お茶の水女子大学大学院 人間文化創成科学研究科 理学専攻 博士後期過程 修了", icon: "fas fa-graduation-cap"},
       {date: "2024/01/01", contents: "株式会社NTTコノキュー 入社", icon: "far fa-building"},
       {date: "2023/12/31", contents: "ティフォン株式会社 退職", icon: "far fa-building"},
       {date: "2023/12/22", contents: "芸術科学会論文誌; iMake", icon:"far fa-file-alt"},
@@ -21,7 +22,7 @@ function Common() {
       {date: "2016/04/01", contents: "お茶の水女子大学大学院 人間文化創成科学研究科 理学専攻 博士後期 入学", icon: "fas fa-school"},
       {date: "2015/05/16", contents: "Tokyo Hackadeics; 準優勝", icon:"fas fa-award"},
       {date: "2015/04/01", contents: "Yahoo! JAPAN 入社", icon: "far fa-building"},
-      {date: "2015/03/31", contents: "お茶の水女子大学大学院 人間文化創成科学研究科 理学専攻 博士前期 卒業", icon: "fas fa-graduation-cap"},
+      {date: "2015/03/31", contents: "お茶の水女子大学大学院 人間文化創成科学研究科 理学専攻 博士前期過程 修了", icon: "fas fa-graduation-cap"},
       {date: "2015/03/06", contents: "インタラクション 2015 インタラクティブ発表; Rijowarts", icon:"far fa-file-alt"},
       {date: "2014/11/29", contents: "Open Hack U 2014; 優勝 & スマートフォン解放賞", icon:"fas fa-award"},
       {date: "2014/11/13", contents: "ACE 2014 口頭発表; iMake", icon:"far fa-file-alt"},
