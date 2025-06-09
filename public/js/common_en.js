@@ -1,7 +1,7 @@
 function Common() {
   this.data = {
     news: [
-      {date: "2024/03/31", contents: "Completing the doctoral program in Ochanomizu University (Science in Advanced Sciences).", icon: "fas fa-graduation-cap"},
+      {date: "2024/03/31", contents: "Completed doctoral program and received Ph.D. in Science from Ochanomizu University.", icon: "fas fa-graduation-cap"},
       {date: "2024/01/01", contents: "Entrance into NTT QONOQ", icon: "far fa-building"},
       {date: "2023/12/31", contents: "Leave TYFFON Inc.", icon: "far fa-building"},
       {date: "2023/12/22", contents: "The Journal of the Society for Art and Science; iMake", icon:"far fa-file-alt"},
